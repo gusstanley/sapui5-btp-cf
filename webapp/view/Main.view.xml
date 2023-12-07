@@ -1,0 +1,13 @@
+<mvc:View controllerName="sapui5btpcf.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <List items="{ path: 'MainModel>/Books' }" noDataText="Drop list items here" id="list0">
+                <items>
+                    <StandardListItem type="Navigation" title="{MainModel>title}" description="{MainModel>price}" icon="sap-icon://picture" id="item0"/>
+                </items>
+            </List>
+        </content>
+    </Page>
+</mvc:View>
